@@ -3,6 +3,7 @@ const app = express()
 const port = 3000
 const mongoose=require('mongoose')
 const multer=require('multer')
+const cors=require('cors')
 
 app.use(express.json())
 app.use(cors())
