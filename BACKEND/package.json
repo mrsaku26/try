@@ -1,24 +1,24 @@
 {
-  "name": "backend",
+  "name": "try",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrsaku26/try.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mrsaku26/try/issues"
+  },
+  "homepage": "https://github.com/mrsaku26/try#readme",
   "dependencies": {
-    "@google/genai": "^1.22.0",
-    "@imagekit/nodejs": "^7.0.1",
-    "cors": "^2.8.5",
-    "dotenv": "^17.2.2",
-    "express": "^5.1.0",
-    "imagekit": "^6.0.0",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.18.1",
-    "multer": "^2.0.2"
+    "express": "^5.1.0"
   }
 }
