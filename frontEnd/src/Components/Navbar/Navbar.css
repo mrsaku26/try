@@ -1,0 +1,25 @@
+.navbar{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 15px 150px;
+}
+.logo{
+   width: 10%;
+   cursor: pointer;
+}
+.login{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 10px;
+   border: none;
+   outline: none;
+   color: white;
+   background: blue;
+   border-radius: 20px;
+   padding: 9px 30px;
+   font-size: 15px;
+   font-weight: 520;
+   cursor: pointer;
+}

@@ -1,0 +1,20 @@
+.sidebar{
+   display: flex;
+   flex-direction: column;
+   border-right: 2px solid rgb(197, 194, 194);
+   width: 20vh;
+   height: 98vh;
+   padding-top: 2vh;
+}
+.sidebar-p{
+   margin-left: 1vh;
+   font-weight: 550;
+   min-width: 200px;
+}
+.sidebar-link{
+   margin-left: -1vh;
+   background: rgb(200, 198, 222);
+   width: 210px;
+   border-right: 8px solid rgb(78, 78, 241);
+}
+

@@ -1,0 +1,20 @@
+.publish{
+   color: green;
+}
+.unpublish{
+   color: orange;
+}
+.table-body{
+   font-size: 14px;
+}
+.table-body button{
+   font-size: 14px;
+   border: 1px solid black;
+   max-width: 100px;
+   margin: auto;
+}
+.table-body img{
+   padding-top: 11px;
+   padding-left: 10px;
+   cursor: pointer;
+}

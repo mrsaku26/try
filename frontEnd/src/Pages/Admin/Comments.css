@@ -1,0 +1,42 @@
+.admin-cmt{
+   margin-top: -91vh;
+   margin-left: 30vh;
+   max-width: 1200px;
+}
+.cmt-data{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.cmt-data p{
+   font-weight: 600;
+   color: rgb(20, 13, 13);
+}
+.cmt-data button{
+   gap: 10vh;
+   font-weight: 500;
+   font-size: 14px;
+   border: 1px solid gray;
+   border-radius: 20px;
+   width: 120px;
+}
+.approved{
+   margin-right: 2vh;
+}
+.comments-datas{
+   display: grid;
+   grid-template-columns: 3fr 1fr 1fr;
+   font-weight: 600;
+   color: rgb(77, 73, 73);
+}
+.approv{
+   color: rgb(51, 130, 51);
+   background-color: rgb(147, 206, 57);
+   border-radius: 20px;
+   border:1px solid black;
+   padding: 4px 8px;
+}
+.box-shadow{
+   box-shadow: 0 0 6px rgba(0,0,0,0.2);
+   padding: 15px 30px;
+}
