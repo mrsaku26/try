@@ -4,6 +4,7 @@ const port = 3000
 const mongoose=require('mongoose')
 const multer=require('multer')
 const jwt=require('jsonwebtoken')
+const ImageKit =require('imagekit')
 
 try {
    mongoose.connection.on('connected',()=> console.log('Database Connected'))
@@ -12,6 +13,32 @@ try {
 } catch (error) {
    console.error(error)
 }
+
+const imagekit = new ImageKit({
+  publicKey:"public_nP3DmDjQfRMeeBEYZYPS32sriew=",
+  privateKey:"private_7D319T2CcBMBxjgIuopFsc3Vgws=",
+  urlEndpoint: "https://ik.imagekit.io/mrsaku",
+});
+
+// ✅ Upload endpoint
+const upload = multer()
+app.post('/upload', upload.single('product'), async (req, res) => {
+  try {
+    const result = await imagekit.upload({
+      file: req.file.buffer, // file buffer from multer
+      fileName: `${Date.now()}_${req.file.originalname}`,
+    });
+
+    res.json({
+      success: true,
+      image_url: result.url, // public CDN URL
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ success: false, error: 'Upload failed' });
+  }
+});
+
 
 // Mongoose Schema
 
