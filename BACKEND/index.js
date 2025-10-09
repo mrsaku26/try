@@ -1,6 +1,16 @@
 const express = require('express')
 const app = express()
 const port = 3000
+const mongoose=require('mongoose')
+
+
+try {
+   mongoose.connection.on('connected',()=> console.log('Database Connected'))
+   mongoose.connect('mongodb+srv://mrsaku26:practice@cluster0.kejy0mm.mongodb.net/practice')
+
+} catch (error) {
+   console.error(error)
+}
 
 
 
